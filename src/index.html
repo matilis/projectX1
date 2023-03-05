@@ -1,16 +1,29 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectX1</title>
     <link href="/src/assets/styles/index.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+    <header>
+        <div>
+            <include src="src/components/navbar.html"></include>
+        </div>
+    </header>
+    <main>
+        <div class="container mt-8 max-w-[47%] mx-auto">
+            <include src="src/components/searchbar.html"></include>
+            <div id="cars" class="flex flex-wrap justify-between mt-7 "></div>
+        </div>
+
+    </main>
+    <footer></footer>
+    <script type="module" src="./project.js"></script>
 </body>
 
 </html>
